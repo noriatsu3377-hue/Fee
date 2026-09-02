@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>原口慶篤 パーソナルセッション | 零 -ZERO-</title>
     <meta name="description" content="整体・関節調整・ストレッチ・トレーニングを組み合わせ、今の身体に本当に必要なセッションを提供する原口慶篤のパーソナルセッション。東京・完全予約制。">
+    <!-- OGP Settings -->
+    <meta property="og:title" content="原口慶篤 パーソナルセッション | 零 -ZERO-">
+    <meta property="og:description" content="整体・関節調整・ストレッチ・トレーニングを組み合わせ、今の身体に本当に必要なセッションを提供する原口慶篤のパーソナルセッション。東京・完全予約制。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noriatsu3377-hue.github.io/Fee/">
+    <meta property="og:image" content="https://noriatsu3377-hue.github.io/Fee/anatomy1のコピー.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- 予約URLをここに設定 -->
+    <!-- ※各予約ボタンの href="https://lin.ee/xxxx?course=yyy" 等に変更してください -->
+
     <!-- ヘッダー / ナビゲーション (シンプル) -->
     <header class="header">
         <div class="header-inner">
@@ -52,42 +63,6 @@
         </div>
     </section>
 
-    <!-- コンセプト -->
-    <section class="concept section">
-        <div class="container">
-            <h2 class="section-title">CONCEPT<span>このセッションが大切にしていること</span></h2>
-            
-            <div class="concept-lead">
-                <p>整えるだけで終わらない。</p>
-                <p>鍛えるだけでも終わらない。</p>
-            </div>
-            
-            <img src="./ChatGPT Image 2026年8月27日 00_29_41.png" alt="パーソナルセッションのイメージ" class="content-image" style="object-position: center top;">
-            
-            <div class="concept-text">
-                <p>身体の悩みは、一つの筋肉や関節だけで起きているとは限りません。姿勢、関節の動き、柔軟性、筋力、動作の癖、呼吸、日常生活、スポーツ特性など、さまざまな要素が関係します。</p>
-                <p>そのため、このセッションでは「整体だけ」「ストレッチだけ」「トレーニングだけ」と最初から方法を限定しません。</p>
-                <p>まず身体の状態を確認し、その人の目的に応じて、以下の内容を組み合わせます。</p>
-                
-                <ul class="method-list">
-                    <li>全身整体</li>
-                    <li>関節調整</li>
-                    <li>パーソナルストレッチ</li>
-                    <li>ヘッドコンディショニング</li>
-                    <li>フットコンディショニング</li>
-                    <li>ハンドコンディショニング</li>
-                    <li>姿勢改善トレーニング</li>
-                    <li>足痩せ・美脚・美尻トレーニング</li>
-                    <li>ボディメイク</li>
-                    <li>パフォーマンスアップ</li>
-                </ul>
-                
-                <p>施術によって動きやすい状態をつくり、その状態を運動へつなげる。<br>
-                一時的な心地よさだけではなく、自分の身体をより良く扱える状態を目指します。</p>
-            </div>
-        </div>
-    </section>
-
     <!-- 初回限定セッション -->
     <section id="first-session" class="first-session section bg-gray">
         <div class="container">
@@ -103,7 +78,7 @@
                 </div>
                 
                 <div class="card-body">
-                    <img src="./ChatGPT Image 2026年8月27日 00_20_58.png" alt="カウンセリングの様子" class="content-image" style="margin-top:0; object-position: center top;">
+                    <img src="./course_total_body.png" alt="カウンセリングの様子" class="content-image" style="margin-top:0; object-position: center top; aspect-ratio: 16/9; object-fit: cover;">
                     
                     <p class="trial-desc">
                         通常の60分セッションは15,000〜18,000円ですが、初めての方が現在の身体を知り、サービスとの相性を確認できる入口として、初回限定価格を設定しています。<br><br>
@@ -150,7 +125,7 @@
                 </div>
                 
                 <div class="card-footer center">
-                    <a href="#reservation" class="cta-button primary-cta">
+                    <a href="https://lin.ee/xxxx?course=first" class="cta-button primary-cta">
                         <span class="cta-text">初回75〜90分・10,000円で予約する</span>
                         <span class="cta-arrow">→</span>
                     </a>
@@ -159,15 +134,141 @@
         </div>
     </section>
 
+    <!-- 【新規】悩みから選ぶコース案内 -->
+    <section class="problem-selection section">
+        <div class="container">
+            <h2 class="section-title">GUIDE<span>悩みから選ぶコース案内</span></h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>どのコースか迷っている</h3>
+                    <ul>
+                        <li>自分に必要な内容が分からない</li>
+                        <li>その日の状態で内容を決めてほしい</li>
+                    </ul>
+                    <a href="#course-omakase" class="problem-btn">完全おまかせ・零式コンディショニング</a>
+                </div>
+                <div class="problem-card">
+                    <h3>全身の疲れ・動きにくさ</h3>
+                    <ul>
+                        <li>身体全体のバランスを整えたい</li>
+                        <li>複数の部位が気になる</li>
+                    </ul>
+                    <a href="#course-fulladjust" class="problem-btn">全身調整コンディショニング</a>
+                </div>
+                <div class="problem-card">
+                    <h3>姿勢を改善したい</h3>
+                    <ul>
+                        <li>猫背、巻き肩、反り腰が気になる</li>
+                        <li>正しい姿勢を維持したい</li>
+                    </ul>
+                    <a href="#course-posture" class="problem-btn">姿勢改善コンディショニング</a>
+                </div>
+                <div class="problem-card">
+                    <h3>引き締め・ボディメイク</h3>
+                    <ul>
+                        <li>脚のラインやお尻を引き締めたい</li>
+                        <li>正しいフォームで鍛えたい</li>
+                    </ul>
+                    <a href="#course-body" class="problem-btn">美脚・ボディメイク</a>
+                </div>
+                <div class="problem-card">
+                    <h3>競技のパフォーマンス向上</h3>
+                    <ul>
+                        <li>スポーツの動きを良くしたい</li>
+                        <li>可動域や安定性を高めたい</li>
+                    </ul>
+                    <a href="#course-performance" class="problem-btn">パフォーマンスアップ</a>
+                </div>
+                <div class="problem-card">
+                    <h3>疲労をとりたい・休みたい</h3>
+                    <ul>
+                        <li>仕事や日々の疲れが強い</li>
+                        <li>施術を中心にリラックスしたい</li>
+                    </ul>
+                    <a href="#course-recovery" class="problem-btn">疲労回復コンディショニング</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【新規】料金一覧表 -->
+    <section class="pricing-overview section bg-gray">
+        <div class="container">
+            <h2 class="section-title">PRICING<span>全コース料金一覧</span></h2>
+            <div class="pricing-table-wrap">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th class="col-course">コース</th>
+                            <th class="col-time">時間</th>
+                            <th class="col-price">都度払い (税込)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TOTAL BODY CHECK／初回限定</td>
+                            <td class="col-time">75〜90分</td>
+                            <td class="col-price">10,000円</td>
+                        </tr>
+                        <tr>
+                            <td>完全おまかせ・零式コンディショニング</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">16,500円</td>
+                        </tr>
+                        <tr>
+                            <td>全身トータルコンディショニング</td>
+                            <td class="col-time">90分</td>
+                            <td class="col-price">19,800円</td>
+                        </tr>
+                        <tr>
+                            <td>パフォーマンスアップ</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">13,200円</td>
+                        </tr>
+                        <tr>
+                            <td>全身調整コンディショニング</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">13,200円</td>
+                        </tr>
+                        <tr>
+                            <td>姿勢改善コンディショニング</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">12,100円</td>
+                        </tr>
+                        <tr>
+                            <td>美脚・ボディメイク</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">12,100円</td>
+                        </tr>
+                        <tr>
+                            <td>疲労回復コンディショニング</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">11,000円</td>
+                        </tr>
+                        <tr>
+                            <td>同業者向け個別セッション</td>
+                            <td class="col-time">60分</td>
+                            <td class="col-price">16,500円</td>
+                        </tr>
+                        <tr>
+                            <td>ヘッド／フット／ハンド</td>
+                            <td class="col-time">各30分</td>
+                            <td class="col-price">5,500円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
     <!-- 目的別コース一覧 -->
-    <section class="courses section bg-gray">
+    <section class="courses section">
         <div class="container">
             <h2 class="section-title">COURSES<span>目的別コース一覧</span></h2>
             
             <div class="accordion-group">
                 <!-- Course 1 -->
-                <details class="accordion">
+                <details class="accordion" id="course-omakase">
                     <summary class="accordion-header">
                         <div class="acc-title-wrap">
                             <span class="course-num">01</span>
@@ -179,23 +280,33 @@
                         <div class="acc-icon"></div>
                     </summary>
                     <div class="accordion-body">
-                        <p class="course-def">自分では必要な施術やトレーニングを判断できない方のための、完全オーダーメイドコースです。<br>当日の身体の状態、悩み、目的を確認し、整体、関節調整、ストレッチ、トレーニングなどから必要な内容を選択します。<br>全身の状態や動作を確認しながら、複数の方法を総合的に組み合わせます。</p>
-                        
-                        <div class="course-box">
-                            <h4>おすすめの方</h4>
-                            <ul class="check-list">
-                                <li>どのコースを選べばよいか分からない方</li>
-                                <li>その日によって身体の状態が変わる方</li>
-                                <li>施術と運動の両方を受けたい方</li>
-                                <li>自分の身体に合わせて内容を決めてほしい方</li>
-                                <li>複数の悩みを相談したい方</li>
-                            </ul>
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_omakase.png" alt="完全おまかせ・零式コンディショニング">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">自分では必要な施術やトレーニングを判断できない方のための、完全オーダーメイドコースです。<br>当日の身体の状態、悩み、目的を確認し、整体、関節調整、ストレッチ、トレーニングなどから必要な内容を選択します。<br>全身の状態や動作を確認しながら、複数の方法を総合的に組み合わせます。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>どのコースを選べばよいか分からない方</li>
+                                        <li>その日によって身体の状態が変わる方</li>
+                                        <li>施術と運動の両方を受けたい方</li>
+                                        <li>自分の身体に合わせて内容を決めてほしい方</li>
+                                        <li>複数の悩みを相談したい方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=omakase" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </details>
 
                 <!-- Course 2 -->
-                <details class="accordion">
+                <details class="accordion" id="course-fulladjust">
                     <summary class="accordion-header">
                         <div class="acc-title-wrap">
                             <span class="course-num">02</span>
@@ -207,23 +318,33 @@
                         <div class="acc-icon"></div>
                     </summary>
                     <div class="accordion-body">
-                        <p class="course-def">全身整体、関節調整、パーソナルストレッチを組み合わせ、身体全体の動きやバランスを整えるコースです。<br>強く揉むことだけを目的とせず、関節の動きや身体のつながりを確認しながら必要な部分に対応します。<br>全身を確認し、複数の部位のつながりを考慮して調整します。</p>
-                        
-                        <div class="course-box">
-                            <h4>おすすめの方</h4>
-                            <ul class="check-list">
-                                <li>身体全体の疲れや動きにくさが気になる方</li>
-                                <li>首肩、腰、股関節など複数の部位が気になる方</li>
-                                <li>柔軟性や関節の動きを整えたい方</li>
-                                <li>トレーニング前後の身体を整えたい方</li>
-                                <li>定期的なコンディショニングを受けたい方</li>
-                            </ul>
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_full_adjust.png" alt="全身調整コンディショニング">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">全身整体、関節調整、パーソナルストレッチを組み合わせ、身体全体の動きやバランスを整えるコースです。<br>強く揉むことだけを目的とせず、関節の動きや身体のつながりを確認しながら必要な部分に対応します。<br>全身を確認し、複数の部位のつながりを考慮して調整します。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>身体全体の疲れや動きにくさが気になる方</li>
+                                        <li>首肩、腰、股関節など複数の部位が気になる方</li>
+                                        <li>柔軟性や関節の動きを整えたい方</li>
+                                        <li>トレーニング前後の身体を整えたい方</li>
+                                        <li>定期的なコンディショニングを受けたい方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=fulladjust" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </details>
 
                 <!-- Course 3 -->
-                <details class="accordion">
+                <details class="accordion" id="course-recovery">
                     <summary class="accordion-header">
                         <div class="acc-title-wrap">
                             <span class="course-num">03</span>
@@ -235,23 +356,33 @@
                         <div class="acc-icon"></div>
                     </summary>
                     <div class="accordion-body">
-                        <p class="course-def">日々の疲労が強い方に向けて、整体、ストレッチ、ヘッド、フット、ハンドなどを組み合わせる施術中心のコースです。<br>身体を積極的に鍛えることよりも、力を抜き、休息しやすい状態をつくることを重視します。<br>全身の施術に加え、状態に応じてヘッド、フット、ハンドを組み合わせます。</p>
-                        
-                        <div class="course-box">
-                            <h4>おすすめの方</h4>
-                            <ul class="check-list">
-                                <li>仕事や移動による疲れが強い方</li>
-                                <li>頭、目、首肩の疲れが気になる方</li>
-                                <li>脚の重さや足元の疲れが気になる方</li>
-                                <li>トレーニングやスポーツ後のケアを受けたい方</li>
-                                <li>施術を中心にゆっくり身体を整えたい方</li>
-                            </ul>
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_recovery.png" alt="疲労回復コンディショニング">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">日々の疲労が強い方に向けて、整体、ストレッチ、ヘッド、フット、ハンドなどを組み合わせる施術中心のコースです。<br>身体を積極的に鍛えることよりも、力を抜き、休息しやすい状態をつくることを重視します。<br>全身の施術に加え、状態に応じてヘッド、フット、ハンドを組み合わせます。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>仕事や移動による疲れが強い方</li>
+                                        <li>頭、目、首肩の疲れが気になる方</li>
+                                        <li>脚の重さや足元の疲れが気になる方</li>
+                                        <li>トレーニングやスポーツ後のケアを受けたい方</li>
+                                        <li>施術を中心にゆっくり身体を整えたい方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=recovery" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </details>
 
                 <!-- Course 4 -->
-                <details class="accordion">
+                <details class="accordion" id="course-posture">
                     <summary class="accordion-header">
                         <div class="acc-title-wrap">
                             <span class="course-num">04</span>
@@ -263,24 +394,34 @@
                         <div class="acc-icon"></div>
                     </summary>
                     <div class="accordion-body">
-                        <p class="course-def">姿勢を見た目だけで判断せず、関節の動き、柔軟性、筋力、呼吸、動作の癖などを確認し、施術と運動を組み合わせるコースです。<br>「胸を張る」「背筋を伸ばす」といった一時的な修正だけではなく、その人が自然に姿勢を保ちやすい身体づくりを目指します。<br>全身の姿勢と動作を確認し、施術、ストレッチ、姿勢改善運動まで行います。</p>
-                        
-                        <div class="course-box">
-                            <h4>おすすめの方</h4>
-                            <ul class="check-list">
-                                <li>猫背や巻き肩が気になる方</li>
-                                <li>反り腰や骨盤の傾きが気になる方</li>
-                                <li>写真や鏡で見た姿勢が気になる方</li>
-                                <li>デスクワークで身体が固まりやすい方</li>
-                                <li>姿勢を整えながら身体を動かしたい方</li>
-                                <li>施術だけでは姿勢が戻ってしまうと感じる方</li>
-                            </ul>
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_posture.png" alt="姿勢改善コンディショニング">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">姿勢を見た目だけで判断せず、関節の動き、柔軟性、筋力、呼吸、動作の癖などを確認し、施術と運動を組み合わせるコースです。<br>「胸を張る」「背筋を伸ばす」といった一時的な修正だけではなく、その人が自然に姿勢を保ちやすい身体づくりを目指します。<br>全身の姿勢と動作を確認し、施術、ストレッチ、姿勢改善運動まで行います。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>猫背や巻き肩が気になる方</li>
+                                        <li>反り腰や骨盤の傾きが気になる方</li>
+                                        <li>写真や鏡で見た姿勢が気になる方</li>
+                                        <li>デスクワークで身体が固まりやすい方</li>
+                                        <li>姿勢を整えながら身体を動かしたい方</li>
+                                        <li>施術だけでは姿勢が戻ってしまうと感じる方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=posture" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </details>
 
                 <!-- Course 5 -->
-                <details class="accordion">
+                <details class="accordion" id="course-body">
                     <summary class="accordion-header">
                         <div class="acc-title-wrap">
                             <span class="course-num">05</span>
@@ -292,23 +433,33 @@
                         <div class="acc-icon"></div>
                     </summary>
                     <div class="accordion-body">
-                        <p class="course-def">体重を減らすことや見た目だけを目的とせず、姿勢、筋力、関節の動きを確認しながら、目的に合わせて身体をつくるコースです。<br>必要に応じて関節調整やストレッチを行い、身体を動かしやすい状態に整えてから、足痩せ・美尻などの目的別トレーニングやフォーム修正を行います。</p>
-                        
-                        <div class="course-box">
-                            <h4>おすすめの方</h4>
-                            <ul class="check-list">
-                                <li>脚のラインが気になる方、お尻を引き締めたい方</li>
-                                <li>身体を引き締めたい方、筋肉をつけたい方</li>
-                                <li>正しいフォームを身につけたい方</li>
-                                <li>足部や股関節の使い方を見直したい方</li>
-                                <li>身体の不調に配慮しながら運動したい方</li>
-                            </ul>
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_leg_hip.png" alt="美脚・ボディメイク">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">体重を減らすことや見た目だけを目的とせず、姿勢、筋力、関節の動きを確認しながら、目的に合わせて身体をつくるコースです。<br>必要に応じて関節調整やストレッチを行い、身体を動かしやすい状態に整えてから、足痩せ・美尻などの目的別トレーニングやフォーム修正を行います。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>脚のラインが気になる方、お尻を引き締めたい方</li>
+                                        <li>身体を引き締めたい方、筋肉をつけたい方</li>
+                                        <li>正しいフォームを身につけたい方</li>
+                                        <li>足部や股関節の使い方を見直したい方</li>
+                                        <li>身体の不調に配慮しながら運動したい方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=body" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </details>
 
                 <!-- Course 6 -->
-                <details class="accordion">
+                <details class="accordion" id="course-performance">
                     <summary class="accordion-header">
                         <div class="acc-title-wrap">
                             <span class="course-num">06</span>
@@ -320,17 +471,63 @@
                         <div class="acc-icon"></div>
                     </summary>
                     <div class="accordion-body">
-                        <p class="course-def">スポーツやトレーニングに必要な身体の動きを確認し、関節調整、ストレッチ、動作改善、競技に応じたトレーニングを組み合わせる専門コースです。<br>筋力を高めるだけでなく、可動域、安定性、連動性、身体の使い方まで総合的に確認し、調整からトレーニングまで一貫して行います。</p>
-                        
-                        <div class="course-box">
-                            <h4>おすすめの方</h4>
-                            <ul class="check-list">
-                                <li>スポーツのパフォーマンスを高めたい方</li>
-                                <li>トレーニングフォームを見直したい方</li>
-                                <li>左右差や動きにくさが気になる方</li>
-                                <li>怪我から競技復帰後の身体づくりを行いたい方</li>
-                                <li>競技に必要な可動域や安定性を高めたい方</li>
-                            </ul>
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_performance.png" alt="パフォーマンスアップ">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">スポーツやトレーニングに必要な身体の動きを確認し、関節調整、ストレッチ、動作改善、競技に応じたトレーニングを組み合わせる専門コースです。<br>筋力を高めるだけでなく、可動域、安定性、連動性、身体の使い方まで総合的に確認し、調整からトレーニングまで一貫して行います。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>スポーツのパフォーマンスを高めたい方</li>
+                                        <li>トレーニングフォームを見直したい方</li>
+                                        <li>左右差や動きにくさが気になる方</li>
+                                        <li>怪我から競技復帰後の身体づくりを行いたい方</li>
+                                        <li>競技に必要な可動域や安定性を高めたい方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=performance" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Course 7 【新規】同業者向け -->
+                <details class="accordion" id="course-professional">
+                    <summary class="accordion-header">
+                        <div class="acc-title-wrap">
+                            <span class="course-num">07</span>
+                            <h3>同業者向け個別セッション</h3>
+                        </div>
+                        <div class="acc-prices">
+                            <span>60分 16,500円</span>
+                        </div>
+                        <div class="acc-icon"></div>
+                    </summary>
+                    <div class="accordion-body">
+                        <div class="course-detail-wrap">
+                            <div class="course-detail-img">
+                                <img src="./course_professional.png" alt="同業者向け個別セッション">
+                            </div>
+                            <div class="course-detail-text">
+                                <p class="course-def">トレーナー、整体師、セラピスト、理学療法士など、身体に関わる専門職の方に向けたコースです。<br>自身の身体のコンディショニングはもちろん、技術の確認や評価方法の相談など、目的に合わせた内容で対応いたします。</p>
+                                
+                                <div class="course-box">
+                                    <h4>おすすめの方</h4>
+                                    <ul class="check-list">
+                                        <li>施術やトレーニング指導を受けてみたい同業者の方</li>
+                                        <li>自身の技術や評価方法について相談したい方</li>
+                                        <li>コンディショニングと学びを同時に得たい専門職の方</li>
+                                    </ul>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <a href="https://lin.ee/xxxx?course=professional" class="cta-button">このコースを予約する</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </details>
@@ -339,13 +536,14 @@
     </section>
 
     <!-- 部分別ショートメニュー -->
-    <section class="short-menu section">
+    <section class="short-menu section bg-gray">
         <div class="container">
             <h2 class="section-title">SHORT MENU<span>部分別ショートメニュー</span></h2>
             
             <div class="cards-grid">
                 <!-- Short 1 -->
                 <div class="short-card">
+                    <img src="./course_head.png" alt="ヘッドセラピー" style="margin-bottom:15px; aspect-ratio: 16/9; object-fit: cover;">
                     <h3>ヘッドセラピー</h3>
                     <p class="price">30分 <strong>5,500</strong>円<span>（税込）</span></p>
                     <p class="short-desc">頭部、顔まわり、首まわりを中心に行う施術です。</p>
@@ -362,6 +560,7 @@
 
                 <!-- Short 2 -->
                 <div class="short-card">
+                    <img src="./course_foot.png" alt="フットセラピー" style="margin-bottom:15px; aspect-ratio: 16/9; object-fit: cover;">
                     <h3>フットセラピー</h3>
                     <p class="price">30分 <strong>5,500</strong>円<span>（税込）</span></p>
                     <p class="short-desc">足裏、足部、ふくらはぎなど、足元を中心に行う施術です。</p>
@@ -378,6 +577,7 @@
 
                 <!-- Short 3 -->
                 <div class="short-card">
+                    <img src="./course_hand.png" alt="ハンドセラピー" style="margin-bottom:15px; aspect-ratio: 16/9; object-fit: cover;">
                     <h3>ハンドセラピー</h3>
                     <p class="price">30分 <strong>5,500</strong>円<span>（税込）</span></p>
                     <p class="short-desc">手、指、前腕を中心に行う施術です。</p>
@@ -391,9 +591,7 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
-            
             <div class="info-note">
                 <p><strong>料金設定の理由：</strong> ヘッド、フット、ハンドは施術を中心とした部分ケアのため各30分5,500円に設定しています。</p>
             </div>
@@ -401,74 +599,31 @@
     </section>
 
     <!-- 90分セットコース -->
-    <section class="premium-courses section bg-gray">
+    <section class="premium-courses section">
         <div class="container">
             <h2 class="section-title">PREMIUM COURSE<span>90分セットコース</span></h2>
             <p class="section-lead">より深く、じっくりと身体に向き合いたい方向けのコースです。</p>
             
             <div class="premium-grid" style="display: block;">
-                <div class="premium-card highlight" style="max-width: 600px; margin: 0 auto;">
-                    <h3>全身トータルコンディショニング</h3>
-                    <p class="price">90分 <strong>19,800</strong>円<span>（税込）</span></p>
-                    <div class="premium-content">
-                        <h4>内容</h4>
-                        <p>全身の評価に基づき、整体、関節調整、パーソナルストレッチ、各種トレーニング、ヘッド・フット・ハンドなどを最適に組み合わせる完全オーダーメイドの90分コースです。</p>
-                        <h4>おすすめの方</h4>
-                        <ul>
-                            <li>全身の疲労が強い方、複数の悩みがある方</li>
-                            <li>施術とトレーニングの両方に十分な時間を取りたい方</li>
-                            <li>60分では時間が足りない方</li>
-                        </ul>
+                <div class="premium-card highlight" style="max-width: 600px; margin: 0 auto; padding:0;">
+                    <img src="./course_total_90.png" alt="全身トータルコンディショニング" style="width:100%; aspect-ratio: 16/9; object-fit: cover;">
+                    <div style="padding:30px;">
+                        <h3>全身トータルコンディショニング</h3>
+                        <p class="price">90分 <strong>19,800</strong>円<span>（税込）</span></p>
+                        <div class="premium-content">
+                            <h4>内容</h4>
+                            <p>全身の評価に基づき、整体、関節調整、パーソナルストレッチ、各種トレーニング、ヘッド・フット・ハンドなどを最適に組み合わせる完全オーダーメイドの90分コースです。</p>
+                            <h4>おすすめの方</h4>
+                            <ul>
+                                <li>全身の疲労が強い方、複数の悩みがある方</li>
+                                <li>施術とトレーニングの両方に十分な時間を取りたい方</li>
+                                <li>60分では時間が足りない方</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; text-align: center;">
+                            <a href="https://lin.ee/xxxx?course=premium90" class="cta-button">このコースを予約する</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 価格設定と対象者 -->
-    <section class="policy section">
-        <div class="container">
-            <h2 class="section-title">VALUE<span>価格設定について</span></h2>
-            
-            <div class="policy-box">
-                <p>このセッションは、施術時間だけで価格を決めているわけではありません。<br>料金には、以下の価値が含まれています。</p>
-                <ul class="check-list">
-                    <li>身体の状態を確認し、優先順位を決める評価</li>
-                    <li>整体、関節調整、ストレッチ、トレーニングを使い分ける判断</li>
-                    <li>その日の身体に合わせた内容の調整</li>
-                    <li>施術から運動まで一人の担当者が一貫して行うこと</li>
-                    <li>セッション後の身体の使い方やセルフケアの提案</li>
-                    <li>トレーナー、整体師として積み重ねてきた経験と専門技術</li>
-                </ul>
-                <p>安さや時間の長さだけを競うサービスではありません。<br>必要以上に施術を増やしたり、目的のないトレーニングを行ったりするのではなく、その人にとって必要なことを必要な順番で提供することを大切にしています。<br><br>一方で、継続しやすさも考慮し、部分的な施術は5,500円から、専門的な総合セッションは15,000〜18,000円に設定しています。</p>
-            </div>
-
-            <div class="target-grid">
-                <div class="target-box recommend">
-                    <h3>このサービスがおすすめの方</h3>
-                    <ul class="check-list">
-                        <li>整体に通っても、しばらくすると身体が元に戻る方</li>
-                        <li>トレーニングを始めたいが、身体の不調や硬さが気になる方</li>
-                        <li>施術とトレーニングを別々の場所で受けたくない方</li>
-                        <li>姿勢や身体の使い方を見直したい方</li>
-                        <li>美脚・ボディメイクに取り組みたい方</li>
-                        <li>スポーツやトレーニングのパフォーマンスを高めたい方</li>
-                        <li>自分の身体に合わせた個別対応を求める方</li>
-                        <li>価格の安さより、内容と担当者の専門性を重視する方</li>
-                        <li>自分の身体と長期的に向き合いたい方</li>
-                    </ul>
-                </div>
-
-                <div class="target-box mismatch">
-                    <h3>このサービスが合わない可能性がある方</h3>
-                    <p class="mismatch-lead">ミスマッチを防ぐため、以下の方にはご期待に沿えない場合がございます。</p>
-                    <ul class="bullet-list">
-                        <li>低価格のもみほぐしだけを求めている方</li>
-                        <li>すべてを受け身で任せ、運動や生活を一切見直したくない方</li>
-                        <li>1回ですべての悩みがなくなることを期待している方</li>
-                        <li>医療機関での診断や治療が必要な方</li>
-                        <li>強い刺激や長時間のマッサージだけを希望する方</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -719,6 +874,59 @@
         </div>
     </section>
 
+    <!-- 【新規】よくある質問 FAQ -->
+    <section class="faq section">
+        <div class="container">
+            <h2 class="section-title">FAQ<span>よくある質問</span></h2>
+            <div class="accordion-group">
+                <details class="accordion">
+                    <summary class="accordion-header">
+                        <div class="acc-title-wrap">
+                            <h3>Q. どのコースを選べばいいかわかりません。</h3>
+                        </div>
+                        <div class="acc-icon"></div>
+                    </summary>
+                    <div class="accordion-body">
+                        <p>初回は、状態を正確に把握するために「TOTAL BODY CHECK（初回限定）」をお選びください。2回目以降は、初回の評価をもとに最適なコースをご提案いたします。もし2回目以降も迷われる場合は「完全おまかせ・零式コンディショニング」をお選びいただければ、当日の状態に合わせて調整いたします。</p>
+                    </div>
+                </details>
+                <details class="accordion">
+                    <summary class="accordion-header">
+                        <div class="acc-title-wrap">
+                            <h3>Q. 着替えは必要ですか？</h3>
+                        </div>
+                        <div class="acc-icon"></div>
+                    </summary>
+                    <div class="accordion-body">
+                        <p>動きやすい服装（Tシャツ、ジャージなど）でお越しいただくか、お持ちください。ジーンズや硬い素材の服は施術や運動の妨げになる場合がございます。※お着替えのスペースはご用意しております。</p>
+                    </div>
+                </details>
+                <details class="accordion">
+                    <summary class="accordion-header">
+                        <div class="acc-title-wrap">
+                            <h3>Q. クレジットカードは使えますか？</h3>
+                        </div>
+                        <div class="acc-icon"></div>
+                    </summary>
+                    <div class="accordion-body">
+                        <p>はい、各種クレジットカード（VISA、Mastercard、JCBなど）、および一部の電子マネーがご利用いただけます。現金でのお支払いも可能です。</p>
+                    </div>
+                </details>
+                <details class="accordion">
+                    <summary class="accordion-header">
+                        <div class="acc-title-wrap">
+                            <h3>Q. 回数券や継続の契約はありますか？</h3>
+                        </div>
+                        <div class="acc-icon"></div>
+                    </summary>
+                    <div class="accordion-body">
+                        <p>本サービスは「都度払い」を基本としております。お客様に無理な契約や回数券の購入を強引に勧めることは一切ございませんのでご安心ください。</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- 注意事項 -->
     <section class="notes section bg-gray">
         <div class="container">
@@ -749,7 +957,7 @@
                 <h3>TOTAL BODY CHECK</h3>
                 <p class="price">75〜90分 <strong>10,000</strong>円<span>（税込）</span></p>
                 
-                <a href="#" class="cta-button primary-cta large">
+                <a href="https://lin.ee/xxxx?course=first" class="cta-button primary-cta large">
                     <span class="cta-text">初回セッションを予約する</span>
                     <span class="cta-arrow">→</span>
                 </a>
@@ -764,6 +972,13 @@
             <p class="copyright">&copy; 2026 零 -ZERO- TOTAL BODY FITNESS THEORY. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- 【新規】SP用 下部固定予約ボタン -->
+    <div class="sp-bottom-btn">
+        <a href="https://lin.ee/xxxx?course=first" class="cta-button primary-cta">
+            <span class="cta-text">初回予約はこちら</span>
+        </a>
+    </div>
 
     <script src="main.js"></script>
 </body>

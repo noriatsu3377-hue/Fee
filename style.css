@@ -5,8 +5,7 @@
     --bg-card: #1a1a1a;
     --text-main: #f0f0f0;
     --text-muted: #999999;
-    --accent: #d4af37; /* Very subtle gold/bronze for highlights, but wait, the prompt says black, white, gray. Let's stick to pure monochrome */
-    --accent: #ffffff;
+    --accent: #ffffff; /* pure white instead of gold */
     --border-color: #333333;
     --border-light: #555555;
     
@@ -761,7 +760,7 @@ details[open] .acc-icon::after {
     top: 0.6em;
     width: 6px;
     height: 6px;
-    background: #d4af37;
+    background: #ffffff;
     border-radius: 50%;
 }
 
@@ -770,7 +769,7 @@ details[open] .acc-icon::after {
     padding: 30px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-light);
-    border-left: 3px solid #d4af37;
+    border-left: 3px solid #ffffff;
 }
 .profile-concept-msg h4 {
     font-size: 1.1rem;
@@ -893,7 +892,7 @@ details[open] .acc-icon::after {
 }
 .metric-value strong {
     font-size: 1.4rem;
-    color: #d4af37;
+    color: #ffffff;
     margin: 0 3px;
 }
 .detail-note {
@@ -992,7 +991,7 @@ details[open] .acc-icon::after {
 /* Footer */
 .footer {
     border-top: 1px solid var(--border-color);
-    padding: 30px 20px;
+    padding: 30px 20px 100px 20px; /* added bottom padding for SP sticky button */
     text-align: center;
 }
 .copyright {
@@ -1000,6 +999,123 @@ details[open] .acc-icon::after {
     font-size: 0.8rem;
     color: var(--text-muted);
     letter-spacing: 0.1em;
+}
+
+/* Course Detail Layout (2-column on PC) */
+.course-detail-wrap {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.course-detail-img {
+    flex: 0 0 40%;
+}
+.course-detail-img img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+.course-detail-text {
+    flex: 1;
+}
+
+/* Problem-based Selection */
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.problem-card {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    background: var(--bg-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.problem-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(255,255,255,0.03);
+    border-color: var(--border-light);
+}
+.problem-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+.problem-card ul {
+    list-style: none;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+.problem-card ul li {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: 8px;
+}
+.problem-card ul li::before {
+    content: '・';
+    position: absolute;
+    left: 0;
+    color: var(--text-main);
+}
+.problem-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid var(--text-main);
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+.problem-btn:hover {
+    background: var(--text-main);
+    color: var(--bg-color);
+}
+
+/* Pricing Table */
+.pricing-table-wrap {
+    overflow-x: auto;
+}
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+.pricing-table th, .pricing-table td {
+    border: 1px solid var(--border-color);
+    padding: 15px 20px;
+    text-align: left;
+}
+.pricing-table th {
+    background: rgba(255,255,255,0.02);
+    font-weight: 500;
+}
+.pricing-table tr:nth-child(even) {
+    background: var(--bg-card);
+}
+.col-course { width: 50%; }
+.col-time { width: 20%; text-align: right !important; }
+.col-price { width: 30%; text-align: right !important; }
+
+/* SP Sticky Button */
+.sp-bottom-btn {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border-light);
+    padding: 15px 20px calc(15px + env(safe-area-inset-bottom));
+    z-index: 99;
+}
+.sp-bottom-btn .cta-button {
+    margin: 0;
+    width: 100%;
+    max-width: none;
 }
 
 /* Responsive */
@@ -1053,7 +1169,20 @@ details[open] .acc-icon::after {
         right: 20px;
         top: 30px;
     }
-    .accordion-body {
-        padding: 0 20px 20px 20px;
+    .course-detail-wrap {
+        flex-direction: column;
+    }
+    .course-detail-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sp-bottom-btn {
+        display: block;
+    }
+    .hero {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        height: auto;
     }
 }
