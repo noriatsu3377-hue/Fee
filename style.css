@@ -92,8 +92,6 @@ a {
     max-height: 400px;
     object-fit: cover;
     margin: 40px 0;
-    opacity: 0.8;
-    filter: grayscale(20%);
     border: 1px solid var(--border-color);
 }
 
@@ -735,29 +733,201 @@ details[open] .acc-icon::after {
 .profile-titles {
     font-size: 0.9rem;
     color: var(--text-muted);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* New Profile Components */
+.profile-highlights {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed var(--border-color);
+}
+.highlight-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    list-style: none;
+}
+.highlight-list li {
+    position: relative;
+    padding-left: 1.2em;
+    font-size: 0.9rem;
+}
+.highlight-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background: #d4af37;
+    border-radius: 50%;
+}
+
+.profile-concept-msg {
+    margin: 30px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-light);
+    border-left: 3px solid #d4af37;
+}
+.profile-concept-msg h4 {
+    font-size: 1.1rem;
     margin-bottom: 15px;
     line-height: 1.6;
 }
-.profile-exp {
+.profile-concept-msg p {
+    margin-bottom: 15px;
     font-size: 0.9rem;
-    margin-bottom: 30px;
 }
-.profile-certs h4 {
-    font-size: 0.95rem;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.profile-concept-msg p:last-child {
+    margin-bottom: 0;
 }
-.profile-certs {
-    margin-bottom: 30px;
+
+.activity-areas {
+    margin-top: 30px;
 }
-.profile-certs ul {
-    list-style: none;
+.activity-areas h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--text-muted);
+}
+.tag-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 20px;
+    gap: 10px;
+}
+.tag-grid span {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--bg-color);
+}
+.small-tags span {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+}
+
+.profile-details {
+    margin-top: 40px;
+}
+.profile-acc-header {
+    background: var(--bg-card);
+}
+.profile-acc-body {
+    padding: 30px 40px;
+}
+.detail-block {
+    margin-bottom: 40px;
+}
+.detail-block:last-child {
+    margin-bottom: 0;
+}
+.detail-title {
+    font-family: var(--font-en);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+.detail-title span {
+    display: block;
+    font-family: var(--font-ja);
     font-size: 0.85rem;
     color: var(--text-muted);
+    margin-top: 5px;
+}
+.detail-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.detail-list strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+}
+.detail-list span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+.detail-desc {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+.sub-block {
+    margin-top: 25px;
+}
+.sub-block h5 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: var(--text-muted);
+}
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.metric-box {
+    border: 1px solid var(--border-color);
+    padding: 20px 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+}
+.metric-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.metric-value {
+    display: block;
+    font-size: 0.9rem;
+}
+.metric-value strong {
+    font-size: 1.4rem;
+    color: #d4af37;
+    margin: 0 3px;
+}
+.detail-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.zero-philosophy {
+    margin-top: 60px;
+    text-align: center;
+    padding: 60px 30px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+}
+.phil-title {
+    font-family: var(--font-en);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+.phil-title span {
+    display: block;
+    font-family: var(--font-ja);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+.zero-philosophy p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.mt-20 {
+    margin-top: 20px;
 }
 .anatomy-gallery {
     display: grid;
@@ -776,13 +946,7 @@ details[open] .acc-icon::after {
 .anatomy-gallery img:hover {
     opacity: 1;
 }
-.profile-msg {
-    border-top: 1px dashed var(--border-color);
-    padding-top: 30px;
-}
-.profile-msg p {
-    margin-bottom: 15px;
-}
+
 
 /* Notes */
 .notes-list {
@@ -864,6 +1028,12 @@ details[open] .acc-icon::after {
     }
     .anatomy-gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .profile-acc-body {
+        padding: 20px;
+    }
+    .metrics-grid {
+        grid-template-columns: 1fr 1fr;
     }
     .accordion-header {
         padding: 20px;
