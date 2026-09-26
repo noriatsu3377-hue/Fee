@@ -1186,3 +1186,116 @@ details[open] .acc-icon::after {
         height: auto;
     }
 }
+
+/* Selection Guide */
+.selection-guide-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.selection-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: border-color 0.3s;
+}
+
+.selection-item:hover {
+    border-color: var(--border-light);
+}
+
+.selection-query {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-main);
+    display: flex;
+    align-items: flex-start;
+}
+
+.selection-query::before {
+    content: '・';
+    margin-right: 5px;
+    color: var(--text-muted);
+}
+
+.selection-answer {
+    display: flex;
+    align-items: center;
+    color: var(--text-main);
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.selection-arrow {
+    margin-right: 15px;
+    color: var(--border-light);
+    font-size: 1.2rem;
+}
+
+.selection-course {
+    color: var(--accent);
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 2px;
+}
+
+.course-intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* Course Split Layout (60min / 90min) */
+.course-split-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .course-split-wrap {
+        flex-direction: row;
+    }
+}
+
+.course-split-item {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 25px;
+    border: 1px solid var(--border-color);
+}
+
+.course-split-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.course-split-title span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.temp-price-note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
