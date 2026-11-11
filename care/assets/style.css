@@ -27,3 +27,6 @@
 @media(max-width:767px){.photo{object-position:var(--focus-m,var(--focus,50% 50%))}}
 .photo[style*="--ratio"]{aspect-ratio:var(--ratio)}
 @media(max-width:767px){.staff-row .photo[style*="--ratio"]{max-width:420px;margin-inline:auto}}
+
+.hero-visual .photo[style*="--ratio"]{border-radius:20px}
+.hero-visual:has(.photo[style*="--ratio"]):after{border-radius:20px}
