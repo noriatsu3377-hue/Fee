@@ -22,3 +22,8 @@
 
 @media(max-width:767px){#hero-title{font-size:1.85rem;line-height:1.55}}
 #hero-title{font-size:clamp(1.85rem,3.3vw,2.9rem)}
+
+.photo{object-position:var(--focus,50% 50%)}
+@media(max-width:767px){.photo{object-position:var(--focus-m,var(--focus,50% 50%))}}
+.photo[style*="--ratio"]{aspect-ratio:var(--ratio)}
+@media(max-width:767px){.staff-row .photo[style*="--ratio"]{max-width:420px;margin-inline:auto}}
