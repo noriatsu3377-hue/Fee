@@ -202,3 +202,5 @@ main > section.wrap { box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0
 main > section:nth-of-type(even) .btn:not(.btn-outline) { background: #B79A5B; border-color: #B79A5B; color: #050505; }
 main > section:nth-of-type(even) .btn-outline { background: transparent; color: #141414; border-color: #7A6230; }
 main > section:nth-of-type(even) .btn-outline:hover { background: #E6E0D2; }
+.offer-date{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;font-family:'Noto Serif JP',serif;font-size:1.15rem;color:var(--ink);letter-spacing:.08em;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid var(--line)}
+.offer-date span{font-family:'Outfit','Noto Sans JP',sans-serif;font-size:1rem;color:var(--gold);letter-spacing:.12em}
