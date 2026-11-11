@@ -187,3 +187,18 @@ details p { margin-top: 20px; padding: 0 18px; color: var(--sub); }
 .btn:not(.btn-outline){background:#B79A5B;color:#050505;border-color:#B79A5B;font-weight:500}
 .btn:not(.btn-outline):hover,.btn:not(.btn-outline):focus-visible{background:#cdb27a;color:#050505;border-color:#cdb27a}
 @media(max-width:767px){.hero-logo{display:none}}
+
+/* セクションごとに黒と白（生成り）を交互にする */
+main > section { background: var(--paper); color: var(--ink); }
+main > section:nth-of-type(even) {
+  --paper: #F2EFE8; --alt: #F2EFE8; --card: #FFFFFF;
+  --ink: #141414; --sub: #4A4740; --faint: #66625A;
+  --gold: #7A6230; --green: var(--gold); --line: #D3CDBF;
+  color-scheme: light;
+}
+/* 幅が決まっているセクションも、背景は画面の端まで */
+main > section.wrap { box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0 -100vmax); }
+/* 白セクションの主ボタン：金の塗りは黒文字のまま、枠線ボタンは濃い文字に */
+main > section:nth-of-type(even) .btn:not(.btn-outline) { background: #B79A5B; border-color: #B79A5B; color: #050505; }
+main > section:nth-of-type(even) .btn-outline { background: transparent; color: #141414; border-color: #7A6230; }
+main > section:nth-of-type(even) .btn-outline:hover { background: #E6E0D2; }
